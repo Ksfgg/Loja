@@ -1,4 +1,4 @@
 # Loja 
-Caique junior
-Gabriela félix
-Mikedna laryssa
+Caique junior,
+Gabriela félix,
+Mikedna laryssa.
