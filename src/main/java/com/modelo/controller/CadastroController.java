@@ -15,6 +15,7 @@ import com.modelo.model.Produto;
 
 @Controller
 public class CadastroController {
+	int a = 0;
 	@Autowired
 	CrudRepository crudRepository;
 	
@@ -39,5 +40,27 @@ public class CadastroController {
 		
 	}
 	
+	@GetMapping("/editar/{id}")
+	public String editar(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("dados", crudRepository.findById(id));
+		return "editar";
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	@GetMapping("/delete/{id}")
+	public String delete(@PathVariable("id") Long id) {
+		System.out.print("ID" + id);
+		return "/cadastro";	
+	}*/
 
 }
