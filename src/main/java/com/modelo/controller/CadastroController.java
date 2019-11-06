@@ -15,7 +15,6 @@ import com.modelo.model.Produto;
 
 @Controller
 public class CadastroController {
-	int a = 0;
 	@Autowired
 	CrudRepository crudRepository;
 	
