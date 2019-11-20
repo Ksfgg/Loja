@@ -3,21 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <style>
         body{
+          text-align: center;
           background-color: #d2dae2
+        }
+        #telles{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-family: 'Bebas Neue', cursive;
+        }
+        .center{
+         display: inline-block;
         }
 
     </style>
 </head>
   <body>
+  <div class="center">
   <form class="form-inline" action="/cadastro" method="post">
-    <label for="">Nome:</label>
+    <label for="" id="telles">Nome:</label>
     <input class="input-group-text" type="text" name="descricao" value="">
     <input class="btn btn-secondary btn-lg" type="submit" value="Salvar">
   </form>
-  
+  </div>
   <table border="1px" class="table table-striped table-dark">  
   	<tr>
   		<th>Código</th>

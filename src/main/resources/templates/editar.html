@@ -1,16 +1,30 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+﻿<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+
+      >
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+        body{
+          background-color: #d2dae2
+        }
+        #telles{
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+          text-align: center;
+        }
+
+
+    </style>
 <title>Editar</title>
 <meta charset="utf-8">
 </head>
 <body>
-<form th:object="${dados}" method="POST" action="/cadastro">	
-		<label>Código:</label>
-		<input type="text" th:field="*{id}" >
-		<label>Descrição:</label>
-		<input type="text" th:field="*{descricao}">
-		<input type="submit" value="Editar">
+<form class="input-group mb-3 input-group-lg" th:object="${dados}" method="POST" action="/cadastro">	
+		<label id="telles" >Descrição:</label>
+		<input class="input-group-text" type="text" th:field="*{descricao}">
+		<input class="btn btn-secondary btn-lg" type="submit" value="Editar" >
 </form>
 </body>
 </html>
