@@ -44,18 +44,16 @@ public class CadastroController {
 	public String editar(@PathVariable("id") Long id, Model model) {
 		model.addAttribute("dados", crud.findById(id));
 		return "editar";
-		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 }
